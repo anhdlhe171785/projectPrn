@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using DataAccess;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,9 +17,16 @@ namespace Group2WPF
 	/// </summary>
 	public partial class MainWindow : Window
 	{
+		private FlightManagementDbContext _context;
 		public MainWindow()
 		{
 			InitializeComponent();
+			_context = new FlightManagementDbContext();
+		}
+
+		private void btn_Click(object sender, RoutedEventArgs e)
+		{
+			lbl.Content = _context.Airlines.First().Name;
 		}
 	}
 }

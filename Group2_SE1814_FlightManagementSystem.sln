@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{67F677A5-6404-4363-A3D9-FBF14E6FE9E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{67F677A5-6404-4363-A3D9-FBF14E6FE9E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{E6B1F68B-CDAF-4C11-B7E6-8F334A81DCF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "Repositories\Repositories.csproj", "{E6B1F68B-CDAF-4C11-B7E6-8F334A81DCF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{BC77470B-04E7-4B34-8ADF-4CC36ADCED22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{BC77470B-04E7-4B34-8ADF-4CC36ADCED22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Group2WPF", "Group2WPF\Group2WPF.csproj", "{4AB72773-E09D-4E3D-B820-F539D88D5502}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Group2WPF", "Group2WPF\Group2WPF.csproj", "{4AB72773-E09D-4E3D-B820-F539D88D5502}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

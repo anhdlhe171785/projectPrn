@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(local);Database= FlightManagementDB;UID=sa;PWD=123;TrustServerCertificate=True"
+  }
+}
