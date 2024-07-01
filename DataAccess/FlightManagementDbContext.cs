@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using DataAccess.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -17,6 +16,8 @@ public partial class FlightManagementDbContext : DbContext
     {
     }
 
+    public virtual DbSet<AccountMember> AccountMembers { get; set; }
+
     public virtual DbSet<Airline> Airlines { get; set; }
 
     public virtual DbSet<Airport> Airports { get; set; }
@@ -31,28 +32,42 @@ public partial class FlightManagementDbContext : DbContext
 
     public virtual DbSet<Passenger> Passengers { get; set; }
 
-
-	private static string GetConnectionString()
-	{
-		IConfiguration configuration = new ConfigurationBuilder().
-			SetBasePath(Directory.GetCurrentDirectory())
-			.AddJsonFile("appsettings.josn", true, true).Build();
-		return configuration.GetConnectionString("DefaultConnection");
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+		var buider = new ConfigurationBuilder().
+	SetBasePath(Directory.GetCurrentDirectory())
+	.AddJsonFile("appsettings.josn", optional: true, reloadOnChange: true);
+		IConfiguration configuration = buider.Build();
+		optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
 	}
-	protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer(GetConnectionString());
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+//        => optionsBuilder.UseSqlServer("Server=(local);database=FlightManagementDB;uid=sa;pwd=123;Encrypt=false;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<AccountMember>(entity =>
+        {
+            entity.HasKey(e => e.MemberId).HasName("PK__AccountM__0CF04B384F7F2532");
+
+            entity.ToTable("AccountMember");
+
+            entity.Property(e => e.MemberId)
+                .HasMaxLength(20)
+                .HasColumnName("MemberID");
+            entity.Property(e => e.EmailAddress).HasMaxLength(100);
+            entity.Property(e => e.FullName).HasMaxLength(80);
+            entity.Property(e => e.MemberPassword).HasMaxLength(80);
+        });
+
         modelBuilder.Entity<Airline>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__airline__3213E83F1A3FEB8B");
+            entity.HasKey(e => e.Id).HasName("PK__airline__3213E83F62544789");
 
             entity.ToTable("airline");
 
-            entity.HasIndex(e => e.Code, "UQ__airline__357D4CF917A77F19").IsUnique();
+            entity.HasIndex(e => e.Code, "UQ__airline__357D4CF9A67A49DC").IsUnique();
 
-            entity.HasIndex(e => e.Name, "UQ__airline__72E12F1B6F3D7719").IsUnique();
+            entity.HasIndex(e => e.Name, "UQ__airline__72E12F1B6D52EB2A").IsUnique();
 
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
@@ -71,11 +86,11 @@ public partial class FlightManagementDbContext : DbContext
 
         modelBuilder.Entity<Airport>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__airport__3213E83FC78BE352");
+            entity.HasKey(e => e.Id).HasName("PK__airport__3213E83F01859F0D");
 
             entity.ToTable("airport");
 
-            entity.HasIndex(e => e.Code, "UQ__airport__357D4CF9CCAFDB03").IsUnique();
+            entity.HasIndex(e => e.Code, "UQ__airport__357D4CF9D77EAC8D").IsUnique();
 
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
@@ -100,7 +115,7 @@ public partial class FlightManagementDbContext : DbContext
 
         modelBuilder.Entity<Baggage>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__baggage__3213E83FE60A7BBB");
+            entity.HasKey(e => e.Id).HasName("PK__baggage__3213E83FABDEFE80");
 
             entity.ToTable("baggage");
 
@@ -119,7 +134,7 @@ public partial class FlightManagementDbContext : DbContext
 
         modelBuilder.Entity<Booking>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__booking__3213E83F621387C2");
+            entity.HasKey(e => e.Id).HasName("PK__booking__3213E83FF0A5093E");
 
             entity.ToTable("booking");
 
@@ -148,7 +163,7 @@ public partial class FlightManagementDbContext : DbContext
 
         modelBuilder.Entity<BookingPlatform>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__bookingP__3213E83FA4FEFCB0");
+            entity.HasKey(e => e.Id).HasName("PK__bookingP__3213E83F5C6879CB");
 
             entity.ToTable("bookingPlatform");
 
@@ -165,7 +180,7 @@ public partial class FlightManagementDbContext : DbContext
 
         modelBuilder.Entity<Flight>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__flight__3213E83FC8BA2BED");
+            entity.HasKey(e => e.Id).HasName("PK__flight__3213E83F6DA20BB3");
 
             entity.ToTable("flight");
 
@@ -205,7 +220,7 @@ public partial class FlightManagementDbContext : DbContext
 
         modelBuilder.Entity<Passenger>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__passenge__3213E83F177E68D6");
+            entity.HasKey(e => e.Id).HasName("PK__passenge__3213E83F68ABE593");
 
             entity.ToTable("passenger");
 
