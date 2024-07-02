@@ -164,5 +164,3 @@ C:\Users\Hoang\Desktop\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\
 C:\Users\Hoang\Desktop\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.pdb
 C:\Users\Hoang\Desktop\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.genruntimeconfig.cache
 C:\Users\Hoang\Desktop\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\ref\Group2WPF.dll
-C:\Users\Hoang\Desktop\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\Window1.g.cs
-C:\Users\Hoang\Desktop\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\Window1.baml

@@ -15,5 +15,8 @@ namespace Services
         void DeleteFlight(Flight flight);
         Flight? GetFlightById(int id);
         List<Flight> GetFlightByFlightID(int flightId);
+        List<Flight> GetFlightByAirlineID(int airlineId);
+        List<Flight> GetFlightByDepartingAirport(int airportId);
+        List<Flight> GetFlightByArrivingAirport(int airportId);
     }
 }

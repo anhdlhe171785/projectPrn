@@ -28,5 +28,11 @@ namespace Services
         public Flight? GetFlightById(int id) => iFlightRepository.GetFlightById(id);
 
         public List<Flight> GetFlightByFlightID(int flightId) => iFlightRepository.GetFlightByFlightID(flightId);
+
+        public List<Flight> GetFlightByAirlineID(int airlineId) => iFlightRepository.GetFlightByAirlineID(airlineId);
+
+        public List<Flight> GetFlightByDepartingAirport(int airportId) => iFlightRepository.GetFlightByDepartingAirport(airportId);
+
+        public List<Flight> GetFlightByArrivingAirport(int airportId) => iFlightRepository.GetFlightByArrivingAirport(airportId);
     }
 }

@@ -46,5 +46,23 @@ namespace Repositories
             FlightManagementDbContext myContext = new FlightManagementDbContext();
             return myContext.Flights.Where(f => f.Id == flightId).ToList();
         }
+
+        public List<Flight> GetFlightByAirlineID(int airlineId)
+        {
+            FlightManagementDbContext myContext = new FlightManagementDbContext();
+            return myContext.Flights.Where(f => f.AirlineId == airlineId).ToList();
+        }
+
+        public List<Flight> GetFlightByDepartingAirport(int airportId)
+        {
+            FlightManagementDbContext myContext = new FlightManagementDbContext();
+            return myContext.Flights.Where(f => f.DepartingAirport == airportId).ToList();
+        }
+
+        public List<Flight> GetFlightByArrivingAirport(int airportId)
+        {
+            FlightManagementDbContext myContext = new FlightManagementDbContext();
+            return myContext.Flights.Where(f => f.ArrivingAirport == airportId).ToList();
+        }
     }
 }

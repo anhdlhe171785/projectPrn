@@ -42,10 +42,17 @@
 
 
         <Label x:Name="lblFliter" Content="Fliter: " HorizontalAlignment="Left" Margin="25,276,0,0" VerticalAlignment="Top" FontSize="20" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="Black"/>
-        <Label x:Name="lblFliterFlightID" Content="Flight ID: " HorizontalAlignment="Left" Margin="25,347,0,0" VerticalAlignment="Top" FontSize="20" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="Black"/>
-        <TextBox x:Name="txtFlightIDFliter" Text="" TextChanged="txtSearchByFlightID_TextChanged" HorizontalAlignment="Left" Margin="25,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+        <Label x:Name="lblFliterFlightID" Content="Flight ID: " HorizontalAlignment="Left" Margin="25,318,0,0" VerticalAlignment="Top" FontSize="20" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="Black"/>
+        <TextBox x:Name="txtFlightIDFliter" Text="" TextChanged="txtSearchByFlightID_TextChanged" HorizontalAlignment="Left" Margin="25,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
 
+        <Label x:Name="lblFliterAirlineID" Content="Airline ID: " HorizontalAlignment="Left" Margin="25,399,0,0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Center" Foreground="Black" IsEnabled="False"/>
+        <TextBox x:Name="txtAirlineIDFliter" Text="" TextChanged="txtSearchByAirlineID_TextChanged" HorizontalAlignment="Left" Margin="25,451,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
 
+        <Label x:Name="lblFliterDepartingAirport" Content="Departing Airport:" HorizontalAlignment="Left" Margin="25,499,0,0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Center" Foreground="Black" IsEnabled="False"/>
+        <TextBox x:Name="txtDepartingAirportFliter" Text="" TextChanged="txtSearchByDepartingAirport_TextChanged" HorizontalAlignment="Left" Margin="25,541,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+
+        <Label x:Name="lblFliterArrivingAirport" Content="Arriving Airport:" HorizontalAlignment="Left" Margin="25,583,0,0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Center" Foreground="Black" IsEnabled="False"/>
+        <TextBox x:Name="txtArrivingAirportFliter" Text="" TextChanged="txtSearchByArrivingAirport_TextChanged" HorizontalAlignment="Left" Margin="25,625,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
 
         <DataGrid x:Name="dgData" Margin="384,276,27,188"
           SelectionChanged="dgData_SelectionChanged"/>
@@ -60,6 +67,9 @@
         RenderTransformOrigin="0.37,0.2" Click="btnDelete_Click"/>
         <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="1079,854,0,55" Width="120" Background="#FFEF8F18" Foreground="White" Click="btnClose_Click"/>
         
+
+
+
 
 
 

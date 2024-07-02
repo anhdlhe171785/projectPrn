@@ -166,10 +166,95 @@ namespace Group2WPF
         {
             try
             {
-                int flightID = Int32.Parse(txtFlightIDFliter.Text);
-                dgData.ItemsSource = null;
-                var foundFlights = iFlightService.GetFlightByFlightID(flightID);
-                dgData.ItemsSource = foundFlights;
+                if (txtFlightIDFliter.Text.Equals(""))
+                {
+                    dgData.ItemsSource = null;
+                    var flights = iFlightService.GetFlights();
+                    dgData.ItemsSource = flights;
+                }
+                else
+                {
+                    int flightID = Int32.Parse(txtFlightIDFliter.Text);
+                    dgData.ItemsSource = null;
+                    var foundFlights = iFlightService.GetFlightByFlightID(flightID);
+                    dgData.ItemsSource = foundFlights;
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error: can not load products");
+            }
+        }
+
+        private void txtSearchByAirlineID_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                if (txtAirlineIDFliter.Text.Equals(""))
+                {
+                    dgData.ItemsSource = null;
+                    var flights = iFlightService.GetFlights();
+                    dgData.ItemsSource = flights;
+                }
+                else
+                {
+                    int airlineID = Int32.Parse(txtAirlineIDFliter.Text);
+                    dgData.ItemsSource = null;
+                    var foundFlights = iFlightService.GetFlightByAirlineID(airlineID);
+                    dgData.ItemsSource = foundFlights;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error: can not load products");
+            }
+        }
+
+        private void txtSearchByDepartingAirport_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                if (txtDepartingAirportFliter.Text.Equals(""))
+                {
+                    dgData.ItemsSource = null;
+                    var flights = iFlightService.GetFlights();
+                    dgData.ItemsSource = flights;
+                }
+                else
+                {
+                    int airportID = Int32.Parse(txtDepartingAirportFliter.Text);
+                    dgData.ItemsSource = null;
+                    var foundFlights = iFlightService.GetFlightByDepartingAirport(airportID);
+                    dgData.ItemsSource = foundFlights;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error: can not load products");
+            }
+        }
+
+        private void txtSearchByArrivingAirport_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                if (txtArrivingAirportFliter.Text.Equals(""))
+                {
+                    dgData.ItemsSource = null;
+                    var flights = iFlightService.GetFlights();
+                    dgData.ItemsSource = flights;
+                }
+                else
+                {
+                    int airportID = Int32.Parse(txtArrivingAirportFliter.Text);
+                    dgData.ItemsSource = null;
+                    var foundFlights = iFlightService.GetFlightByArrivingAirport(airportID);
+                    dgData.ItemsSource = foundFlights;
+                }
+
             }
             catch (Exception ex)
             {
