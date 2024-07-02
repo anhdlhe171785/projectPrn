@@ -1,0 +1,19 @@
+﻿using DataAccess;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Repositories
+{
+    public interface IFlightRepository
+    {
+        List<Flight> GetFlights();
+        void InsertFlight(Flight flight);
+        void UpdateFlight(Flight flight);
+        void DeleteFlight(Flight flight);
+        Flight? GetFlightById(int id);
+        List<Flight> GetFlightByFlightID(int flightId);
+    }
+}
