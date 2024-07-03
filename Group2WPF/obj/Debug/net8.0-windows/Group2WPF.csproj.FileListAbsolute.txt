@@ -80,3 +80,5 @@ D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.pdb
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.genruntimeconfig.cache
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\ref\Group2WPF.dll
+D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\PassengerWPF.g.cs
+D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\PassengerWPF.baml
