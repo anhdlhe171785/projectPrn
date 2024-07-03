@@ -92,6 +92,12 @@ namespace Group2WPF
 					{
 						gender = "Male";
 					}
+					Passenger? pp = _passengerService.Get(id);
+					if(pp != null)
+					{
+						MessageBox.Show("duplicate");
+						return;
+					}
 					Passenger p = new Passenger()
 					{
 						Id = id,
@@ -103,6 +109,7 @@ namespace Group2WPF
 						DateOfBirth = dob,
 					};
 					_passengerService.Add(p);
+					LoadPassenger();
 				}
 				else
 				{
@@ -112,11 +119,8 @@ namespace Group2WPF
 			{
 				MessageBox.Show("Let check your ID, ID is duplicate", "Fail by duplicate id");
 			}
-			finally
-			{
-				LoadPassenger();
-			}
-			ResetInput();
+			
+			//ResetInput();
 		}
 
 		private void Update_Click(object sender, RoutedEventArgs e)
@@ -133,9 +137,35 @@ namespace Group2WPF
 					}
 					else
 					{
+						string fname = txtFName.Text;
+						string lname = txtLName.Text;
+						string gmail = txtGmail.Text;
+						string country = txtCountry.Text;
+						string gender = "";
+						DateOnly dob = DateOnly.Parse(dpDOB.Text);
+						if (rbFemale.IsChecked == true)
+						{
+							gender = "Female";
+						}
+						else
+						{
+							gender = "Male";
+						}
+						p = new Passenger()
+						{
+							Id = id,
+							FirstName = fname,
+							LastName = lname,
+							Email = gmail,
+							Country = country,
+							Gender = gender,
+							DateOfBirth = dob,
+						};
 						_passengerService.Update(p);
 						txtID.IsReadOnly = false;
 						ResetInput();
+						txtFilterFNameOrLastName.Text = string.Empty;
+						dpFilterDOB.Text = string.Empty;
 					}
 				}
 
