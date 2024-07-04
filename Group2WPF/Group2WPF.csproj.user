@@ -15,13 +15,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+
     <Page Update="BaggageWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="BookingPlatformWindow.xaml">
+		<SubType>Designer</SubType>
+	</Page>
+
+    <Page Update="FlightWPF.xaml">
+
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PassengerWPF.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

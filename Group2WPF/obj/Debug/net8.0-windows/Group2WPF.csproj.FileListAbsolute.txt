@@ -166,3 +166,7 @@ C:\Users\ADMIN\Desktop\PRN212\Group2_SE1814_FlightManagementSystem\Group2WPF\obj
 C:\Users\ADMIN\Desktop\PRN212\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\BookingPlatformWindow.baml
 C:\Users\ADMIN\Desktop\PRN212\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\BaggageWindow.g.cs
 C:\Users\ADMIN\Desktop\PRN212\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\BaggageWindow.baml
+C:\Users\ADMIN\Desktop\PRN212\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\FlightWPF.g.cs
+C:\Users\ADMIN\Desktop\PRN212\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\PassengerWPF.g.cs
+C:\Users\ADMIN\Desktop\PRN212\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\FlightWPF.baml
+C:\Users\ADMIN\Desktop\PRN212\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\PassengerWPF.baml
