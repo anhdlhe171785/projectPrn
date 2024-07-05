@@ -116,5 +116,11 @@ namespace Group2WPF
 			BookingPlatformWindow bookingPlatformWindow = new BookingPlatformWindow();
 			bookingPlatformWindow.ShowDialog();
 		}
-	}
+
+        private void Booking_Click(object sender, RoutedEventArgs e)
+        {
+			BookingWPF bookingWindow = new BookingWPF();
+			bookingWindow.ShowDialog();
+        }
+    }
 }

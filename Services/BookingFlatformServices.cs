@@ -8,9 +8,9 @@ namespace Services
     {
         private readonly IBookingPlatformRepository _repository;
 
-        public BookingPlatformService(IBookingPlatformRepository repository)
+        public BookingPlatformService()
         {
-            _repository = repository;
+            _repository = new BookingPlatformRepository();
         }
 
         public List<BookingPlatform> GetAllBookingPlatforms()

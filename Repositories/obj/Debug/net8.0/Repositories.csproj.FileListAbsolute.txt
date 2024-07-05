@@ -14,3 +14,19 @@ D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Repos
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Repositories\obj\Debug\net8.0\refint\Repositories.dll
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Repositories\obj\Debug\net8.0\Repositories.pdb
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Repositories\obj\Debug\net8.0\ref\Repositories.dll
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Repositories\bin\Debug\net8.0\Repositories.deps.json
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Repositories\bin\Debug\net8.0\Repositories.dll
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Repositories\bin\Debug\net8.0\Repositories.pdb
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Repositories\bin\Debug\net8.0\DataAccess.dll
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Repositories\bin\Debug\net8.0\DataAccess.pdb
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Repositories\obj\Debug\net8.0\Repositories.sourcelink.json
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Repositories\obj\Debug\net8.0\Reposito.787EC4B2.Up2Date
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Repositories\obj\Debug\net8.0\Repositories.dll
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Repositories\obj\Debug\net8.0\Repositories.pdb
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Repositories\obj\Debug\net8.0\ref\Repositories.dll

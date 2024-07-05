@@ -23,5 +23,6 @@
         <Button  x:Name="Flight" Content="Flight" HorizontalAlignment="Left" Margin="261,37,0,0" VerticalAlignment="Top" Height="34" Width="103" Click="Flight_Click" RenderTransformOrigin="-0.744,-1.177"/>
         <Button  x:Name="Baggage" Content="Baggage" HorizontalAlignment="Left" Margin="392,37,0,0" VerticalAlignment="Top" Height="34" Width="103" Click="Baggage_Click" RenderTransformOrigin="-0.744,-1.177"/>
         <Button  x:Name="BookingPlatform" Content="BookingPlatform" HorizontalAlignment="Left" Margin="527,37,0,0" VerticalAlignment="Top" Height="34" Width="103" Click="BookingPlatform_Click" RenderTransformOrigin="-0.744,-1.177"/>
+        <Button  x:Name="Booking" Content="Booking" HorizontalAlignment="Left" Margin="665,37,0,0" VerticalAlignment="Top" Width="117" Height="34" Click="Booking_Click"/>
     </Grid>
 </Window>

@@ -22,20 +22,47 @@ namespace Group2WPF
     public partial class BookingWPF : Window
     {
         private readonly IBookingService _bookingService;
+        private readonly IPassengerService _passengerService;
+        private readonly IFlightService _flightService;
+        private readonly IBookingPlatformService _bookingPlatformService;
         public BookingWPF()
         {
             InitializeComponent();
             _bookingService = new BookingService();
+            _passengerService = new PassengerService();
+            _flightService = new FlightService();
+            _bookingPlatformService = new BookingPlatformService();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             getAllBooking();
+            getAllPassenger();
+            getAllFlight();
+            getAllBookingPlatform();
         }
         private void getAllBooking()
         {
             dgData.ItemsSource = null;
             dgData.ItemsSource = _bookingService.getAll();
+        }
+        private void getAllPassenger()
+        {
+            cboPassenger.ItemsSource = _passengerService.GetAll();
+            cboPassenger.DisplayMemberPath = "FirstName";
+            cboPassenger.SelectedValuePath = "Id";
+        }
+        private void getAllFlight()
+        {
+            cboFlight.ItemsSource = _flightService.GetFlights();
+            cboFlight.DisplayMemberPath = "Id";
+            cboFlight.SelectedValuePath = "Id";
+        }
+        private void getAllBookingPlatform()
+        {
+            cboBookingPlatform.ItemsSource = _bookingPlatformService.GetAllBookingPlatforms();
+            cboBookingPlatform.DisplayMemberPath= "Name";
+            cboBookingPlatform.SelectedValuePath = "Id";
         }
 
         private void dgData_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -53,9 +80,9 @@ namespace Group2WPF
                     Booking booking = _bookingService.getBookingById(Int32.Parse(bookingId));
                     txtId.IsReadOnly = true;
                     txtId.Text = booking.Id.ToString();
-                    txtBookingPlatformId.Text = booking.BookingPlatformId.ToString();
-                    txtPassengerId.Text = booking.PassengerId.ToString();
-                    txtFlightId.Text = booking.FlightId.ToString();
+                    cboBookingPlatform.SelectedValue = booking.BookingPlatformId;
+                    cboPassenger.SelectedValue = booking.PassengerId;
+                    cboFlight.SelectedValue = booking.FlightId;
                     txtBookingTime.Text = booking.BookingTime.ToString();
                 }
             }
@@ -70,9 +97,9 @@ namespace Group2WPF
         {
             txtId.Text = "";
             txtId.IsReadOnly = false;
-            txtPassengerId.Text = "";
-            txtFlightId.Text = "";
-            txtBookingPlatformId.Text = "";
+            cboPassenger.SelectedValue = null;
+            cboFlight.SelectedValue = null;
+            cboBookingPlatform.SelectedValue = null;
             txtBookingTime.Text = "";
         }
 
@@ -84,9 +111,9 @@ namespace Group2WPF
                 {
                     Booking booking = new Booking();
                     booking.Id = Int32.Parse(txtId.Text);
-                    booking.PassengerId = Int32.Parse(txtPassengerId.Text);
-                    booking.FlightId = Int32.Parse(txtFlightId.Text);
-                    booking.BookingPlatformId = Int32.Parse(txtBookingPlatformId.Text);
+                    booking.PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString());
+                    booking.FlightId = Int32.Parse(cboFlight.SelectedValue.ToString());
+                    booking.BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString());
                     booking.BookingTime = DateTime.Parse(txtBookingTime.Text);
                     _bookingService.updateBooking(booking);
                 }
@@ -118,9 +145,9 @@ namespace Group2WPF
                 {
                     Booking booking = new Booking();
                     booking.Id = Int32.Parse(txtId.Text);
-                    booking.PassengerId = Int32.Parse(txtPassengerId.Text);
-                    booking.FlightId = Int32.Parse(txtFlightId.Text);
-                    booking.BookingPlatformId = Int32.Parse(txtBookingPlatformId.Text);
+                    booking.PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString());
+                    booking.FlightId = Int32.Parse(cboFlight.SelectedValue.ToString());
+                    booking.BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString());
                     booking.BookingTime = DateTime.Parse(txtBookingTime.Text);
                     _bookingService.addBooking(booking);
                 }
@@ -144,9 +171,9 @@ namespace Group2WPF
                 {
                     Booking booking = new Booking();
                     booking.Id = Int32.Parse(txtId.Text);
-                    booking.PassengerId = Int32.Parse(txtPassengerId.Text);
-                    booking.FlightId = Int32.Parse(txtFlightId.Text);
-                    booking.BookingPlatformId = Int32.Parse(txtBookingPlatformId.Text);
+                    booking.PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString());
+                    booking.FlightId = Int32.Parse(cboFlight.SelectedValue.ToString());
+                    booking.BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString());
                     booking.BookingTime = DateTime.Parse(txtBookingTime.Text);
                     _bookingService.removeBooking(booking);
                 }
@@ -184,10 +211,11 @@ namespace Group2WPF
             dgData.ItemsSource = _bookingService.filterByBookingPlatformID(Int32.Parse(filterBPID.Text));
             else getAllBooking();
         }
-        private void filter_BookingTime(object sender, TextChangedEventArgs e)
+
+        private void datePicker_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if(filterBT.Text.Length > 0)
-            dgData.ItemsSource = _bookingService.filterByBookingTime(filterBT.Text);
+            if (datePicker.Text.Length > 0)
+                dgData.ItemsSource = _bookingService.filterByBookingTime(datePicker.Text);
             else getAllBooking();
         }
     }

@@ -16,3 +16,21 @@ D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Servi
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Services\obj\Debug\net8.0\refint\Services.dll
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Services\obj\Debug\net8.0\Services.pdb
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Services\obj\Debug\net8.0\ref\Services.dll
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\bin\Debug\net8.0\Services.deps.json
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\bin\Debug\net8.0\Services.dll
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\bin\Debug\net8.0\Services.pdb
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\bin\Debug\net8.0\DataAccess.dll
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\bin\Debug\net8.0\Repositories.dll
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\bin\Debug\net8.0\Repositories.pdb
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\bin\Debug\net8.0\DataAccess.pdb
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\obj\Debug\net8.0\Services.sourcelink.json
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\obj\Debug\net8.0\Services.dll
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\obj\Debug\net8.0\refint\Services.dll
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\obj\Debug\net8.0\Services.pdb
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Services\obj\Debug\net8.0\ref\Services.dll
