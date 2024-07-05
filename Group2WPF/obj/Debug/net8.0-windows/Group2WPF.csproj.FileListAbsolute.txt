@@ -69,6 +69,7 @@ D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\AirportWPF.g.cs
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\BaggageWindow.g.cs
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\BookingPlatformWindow.g.cs
+D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\BookingWPF.g.cs
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\FlightWPF.g.cs
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\MainWindow.g.cs
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\PassengerWPF.g.cs
@@ -79,6 +80,7 @@ D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\AirportWPF.baml
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\BaggageWindow.baml
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\BookingPlatformWindow.baml
+D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\BookingWPF.baml
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\FlightWPF.baml
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\MainWindow.baml
 D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\PassengerWPF.baml
