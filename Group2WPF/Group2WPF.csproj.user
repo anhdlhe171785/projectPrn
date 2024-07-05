@@ -7,6 +7,12 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AirlineWPF.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AirportWPF.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="PassengerWPF.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -15,6 +21,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="AirlineWPF.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AirportWPF.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="FlightWPF.xaml">
       <SubType>Designer</SubType>
     </Page>
