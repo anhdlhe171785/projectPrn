@@ -16,12 +16,10 @@ using System.Windows.Shapes;
 
 namespace Group2WPF
 {
-    /// <summary>
-    /// Interaction logic for AirportWPF.xaml
-    /// </summary>
     public partial class AirportWPF : Window
     {
         private readonly IAirportService _airportService;
+
         public AirportWPF()
         {
             InitializeComponent();
@@ -38,12 +36,10 @@ namespace Group2WPF
             {
                 dgairports.ItemsSource = null;
                 dgairports.ItemsSource = _airportService.GetAirports();
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Fail to load Airport " + ex.Message, "Fail");
-
             }
         }
 
@@ -59,11 +55,12 @@ namespace Group2WPF
                 txtairportCity.Text = selectedAirport.City;
             }
         }
+
         private bool ValidateData()
         {
-            if (txtairportId.Text.Length == 0 || txtairportCode.Text.Length == 0 ||
-                txtairportName.Text.Length == 0 || txtairportCountry.Text.Length == 0 ||
-                txtairportState.Text.Length == 0 || txtairportCity.Text.Length == 0)
+            if (string.IsNullOrEmpty(txtairportId.Text) || string.IsNullOrEmpty(txtairportCode.Text) ||
+                string.IsNullOrEmpty(txtairportName.Text) || string.IsNullOrEmpty(txtairportCountry.Text) ||
+                string.IsNullOrEmpty(txtairportState.Text) || string.IsNullOrEmpty(txtairportCity.Text))
             {
                 MessageBox.Show("Please enter all information!", "Validation Error");
                 return false;
@@ -73,21 +70,32 @@ namespace Group2WPF
 
         private void Insert_Click(object sender, RoutedEventArgs e)
         {
-
             try
             {
-                Airport newAirport = new Airport
+                if (ValidateData())
                 {
-                    Code = txtairportCode.Text,
-                    Name = txtairportName.Text,
-                    Country = txtairportCountry.Text,
-                    State = txtairportState.Text,
-                    City = txtairportCity.Text
-                };
-                _airportService.InsertAirport(newAirport);
-                MessageBox.Show("Airport added successfully", "Success");
-                LoadAirport();
-                ResetInput();
+                    int id;
+                    if (!int.TryParse(txtairportId.Text, out id))
+                    {
+                        MessageBox.Show("Invalid ID format!", "Validation Error");
+                        return;
+                    }
+
+                    Airport newAirport = new Airport
+                    {
+                        Id = id, // Set the id manually
+                        Code = txtairportCode.Text,
+                        Name = txtairportName.Text,
+                        Country = txtairportCountry.Text,
+                        State = txtairportState.Text,
+                        City = txtairportCity.Text
+                    };
+
+                    _airportService.InsertAirport(newAirport);
+                    MessageBox.Show("Airport added successfully", "Success");
+                    LoadAirport();
+                    ResetInput();
+                }
             }
             catch (Exception ex)
             {
@@ -128,7 +136,6 @@ namespace Group2WPF
             }
         }
 
-
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -142,7 +149,7 @@ namespace Group2WPF
                 }
                 _airportService.DeleteAirport(existingAirport);
                 MessageBox.Show("Airport deleted successfully", "Success");
-                //LoadAirport();
+                LoadAirport();
                 ResetInput();
             }
             catch (Exception ex)
@@ -177,21 +184,20 @@ namespace Group2WPF
             {
                 if (txtFilter.Text.Length > 0)
                 {
-                    string Name = txtFilter.Text;
+                    string name = txtFilter.Text;
                     dgairports.ItemsSource = null;
-                    dgairports.ItemsSource = _airportService.FillterName(Name);
+                    dgairports.ItemsSource = _airportService.FillterName(name);
                 }
                 else
                 {
                     dgairports.SelectionChanged -= dgAirport_SelectionChanged;
                     LoadAirport();
                     dgairports.SelectionChanged += dgAirport_SelectionChanged;
-
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("You need to reset data", "Fail");
+                MessageBox.Show("You need to reset data: " + ex.Message, "Fail");
             }
         }
     }

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
@@ -12,12 +13,25 @@
         "projectPath": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
         "outputPath": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\DataAccess\\obj\\",
+=======
+    "D:\\FU\\PRN212\\Code\\Project\\Fly\\DataAccess\\DataAccess.csproj": {}
+  },
+  "projects": {
+    "D:\\FU\\PRN212\\Code\\Project\\Fly\\DataAccess\\DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FU\\PRN212\\Code\\Project\\Fly\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "D:\\FU\\PRN212\\Code\\Project\\Fly\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\DIEN MAY XANH\\.nuget\\packages\\",
+        "outputPath": "D:\\FU\\PRN212\\Code\\Project\\Fly\\DataAccess\\obj\\",
+>>>>>>> 2aeee82f8a197b700218f4edb97a6217ecfcba82
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DIEN MAY XANH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -98,7 +112,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 2aeee82f8a197b700218f4edb97a6217ecfcba82
         }
       }
     }

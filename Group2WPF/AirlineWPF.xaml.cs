@@ -1,9 +1,7 @@
 ﻿using DataAccess;
-using Microsoft.Identity.Client.NativeInterop;
 using Services;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,20 +30,18 @@ namespace Group2WPF
 
         private void Airline_Loaded(object sender, RoutedEventArgs e)
         {
-            LoadeAirline();
+            LoadAirlines();
         }
 
-        private void LoadeAirline()
+        private void LoadAirlines()
         {
             try
             {
-                AirlineDataGrid.ItemsSource = null;
                 AirlineDataGrid.ItemsSource = _airlineService.GetAirlines();
-
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Fail to load airline " + ex.Message, "Fail");
+                MessageBox.Show("Failed to load airlines: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -58,8 +54,8 @@ namespace Group2WPF
                 txtairlinename.Text = selectedAirline.Name;
                 txtairlinecountry.Text = selectedAirline.Country;
             }
-
         }
+
         private bool ValidateData()
         {
             if (string.IsNullOrWhiteSpace(txtairlineid.Text) || string.IsNullOrWhiteSpace(txtairlinename.Text) ||
@@ -96,13 +92,14 @@ namespace Group2WPF
 
                     _airlineService.UpdateAirline(airline);
                     MessageBox.Show("Airline updated successfully", "Success");
-                    //RefreshAirlineDataGrid();
+
+                    LoadAirlines(); // Reload data after update
                     ResetInput();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Update failed, check again! " + ex.Message, "Failure");
+                MessageBox.Show("Update failed: " + ex.Message, "Failure");
             }
         }
 
@@ -135,7 +132,8 @@ namespace Group2WPF
 
                     _airlineService.InsertAirline(newAirline);
                     MessageBox.Show("Airline added successfully", "Success");
-                    //RefreshAirlineDataGrid();
+
+                    LoadAirlines(); // Reload data after insert
                     ResetInput();
                 }
             }
@@ -164,7 +162,8 @@ namespace Group2WPF
 
                 _airlineService.DeleteAirline(existingAirline);
                 MessageBox.Show("Airline deleted successfully", "Success");
-                //RefreshAirlineDataGrid();
+
+                LoadAirlines(); // Reload data after delete
                 ResetInput();
             }
             catch (Exception ex)
@@ -190,9 +189,34 @@ namespace Group2WPF
             txtairlinecountry.Text = string.Empty;
         }
 
-        private void txtFilterId_TextChanged(object sender, TextChangedEventArgs e)
-        {
 
+        private void txtFilterName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                if (txtFilterName.Text.Length > 0)
+                {
+                    string filterText = txtFilterName.Text.Trim();
+                    AirlineDataGrid.ItemsSource = null;
+                   
+
+                    // Call the service to filter airlines by name
+                    AirlineDataGrid.ItemsSource = _airlineService.FillerName(filterText);
+                }
+                else
+                {
+                    AirlineDataGrid.SelectionChanged -= AirlineDataGrid_SelectionChanged;
+                    // If the filter text is empty, load all airlines
+                    LoadAirlines();
+                    AirlineDataGrid.SelectionChanged += AirlineDataGrid_SelectionChanged;
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to filter airlines: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
+
     }
 }

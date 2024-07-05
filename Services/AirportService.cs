@@ -2,47 +2,46 @@
 using Repositories;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Services
 {
     public class AirportService : IAirportService
     {
-        private readonly IAirportRepository _airportss;
+        private readonly IAirportRepository _airportRepository;
 
         public AirportService()
         {
-            _airportss = new AirportRepository();
+            _airportRepository = new AirportRepository();
         }
+
         public void DeleteAirport(Airport airport)
         {
-            _airportss.DeleteAirport(airport);
+            _airportRepository.DeleteAirport(airport);
         }
 
         public Airport? GetAirportById(int id)
         {
-            return _airportss.GetAirportbyId(id);
+            return _airportRepository.GetAirportbyId(id);
         }
 
         public List<Airport> GetAirports()
         {
-            return _airportss.GetAirlines();
+            return _airportRepository.GetAirport();
         }
 
         public void InsertAirport(Airport airport)
         {
-            _airportss.InsertAirprot(airport);
+            _airportRepository.InsertAirprot(airport);
         }
 
         public void UpdateAirport(Airport airport)
         {
-            _airportss.UpdateAirport(airport);
+            _airportRepository.UpdateAirport(airport);
         }
+
         public List<Airport> FillterName(string name)
         {
-            return _airportss.Filltername(name);
+            return _airportRepository.Filltername(name);
         }
     }
 }

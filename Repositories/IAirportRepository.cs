@@ -9,7 +9,9 @@ namespace Repositories
 {
     public interface IAirportRepository
     {
-        List<Airport> GetAirlines();
+
+        List<Airport> GetAirport();
+
 
         void InsertAirprot(Airport airport);
 

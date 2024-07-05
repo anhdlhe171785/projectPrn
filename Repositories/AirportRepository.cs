@@ -21,11 +21,6 @@ namespace Repositories
             _context.SaveChanges();
         }
 
-        public List<Airport> GetAirlines()
-        {
-            return _context.Airports.ToList();
-        }
-
         public Airport? GetAirportbyId(int id)
         {
             Airport? airport = _context.Airports.FirstOrDefault(a => a.Id == id);
@@ -49,13 +44,17 @@ namespace Repositories
                     a.State = airport.State;
                     a.City = airport.City;
                 }
-				_context.SaveChanges();
-			}
-            
+            }
+            _context.SaveChanges();
         }
         public List<Airport> Filltername(string name)
         {
-            return _context.Airports.Where(a => a.Name.ToLower() == name.ToLower()).ToList();
+            return _context.Airports.Where(a => a.Name.ToLower().Contains( name.ToLower())).ToList();
+        }
+
+        public List<Airport> GetAirport()
+        {
+            return _context.Airports.ToList();
         }
     }
 }

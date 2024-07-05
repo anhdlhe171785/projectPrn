@@ -10,7 +10,7 @@
         Title="AirlineWPF" Height="700" Width="1000">
     <Grid Margin="10">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" MinHeight="276"/>
+            <RowDefinition Height="Auto" MinHeight="282"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -22,7 +22,7 @@
         <Label Content="Airline Management" HorizontalAlignment="Left" Margin="377,7,0,0" VerticalAlignment="Top" FontSize="24" Grid.ColumnSpan="2" Height="42" Width="226"/>
 
         <!-- Input Controls -->
-        <StackPanel Grid.Row="0" Margin="11,114,391,384" Grid.ColumnSpan="2" Grid.RowSpan="2">
+        <StackPanel Grid.Row="0" Margin="11,114,391,1" Grid.ColumnSpan="2">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -71,7 +71,7 @@
         <!-- Filtering Controls -->
         <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Margin="263,215,119,0" Height="44" VerticalAlignment="Top">
             <Label Content="Filter by Name "  Height="27"/>
-            <TextBox x:Name="txtFilterId" Width="100" VerticalAlignment="Center" Margin="5,5,0,5" TextChanged="txtFilterId_TextChanged"/>
+            <TextBox x:Name="txtFilterName" Width="100" VerticalAlignment="Center" Margin="5,5,0,5" TextChanged="txtFilterName_TextChanged"/>
         </StackPanel>
     </Grid>
 </Window>

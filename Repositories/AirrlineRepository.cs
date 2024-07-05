@@ -53,7 +53,9 @@ namespace Repositories
         }
      public List<Airline> FillterName(string name)
         {
-            return _context.Airlines.Where(a => a.Name.ToLower() == name.ToLower()).ToList();
+
+            return _context.Airlines.Where(a => a.Name.ToLower().Contains( name.ToLower())).ToList();
+
         }
     }
 }

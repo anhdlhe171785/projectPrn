@@ -3372,23 +3372,36 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Admin\\.nuget\\packages\\": {},
     "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+=======
+    "C:\\Users\\DIEN MAY XANH\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+>>>>>>> 2aeee82f8a197b700218f4edb97a6217ecfcba82
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Group2WPF\\Group2WPF.csproj",
       "projectName": "Group2WPF",
       "projectPath": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Group2WPF\\Group2WPF.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Group2WPF\\obj\\",
+=======
+      "projectUniqueName": "D:\\FU\\PRN212\\Code\\Project\\Fly\\Group2WPF\\Group2WPF.csproj",
+      "projectName": "Group2WPF",
+      "projectPath": "D:\\FU\\PRN212\\Code\\Project\\Fly\\Group2WPF\\Group2WPF.csproj",
+      "packagesPath": "C:\\Users\\DIEN MAY XANH\\.nuget\\packages\\",
+      "outputPath": "D:\\FU\\PRN212\\Code\\Project\\Fly\\Group2WPF\\obj\\",
+>>>>>>> 2aeee82f8a197b700218f4edb97a6217ecfcba82
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DIEN MAY XANH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3403,8 +3416,13 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
+<<<<<<< HEAD
             "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Services\\Services.csproj": {
               "projectPath": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Services\\Services.csproj"
+=======
+            "D:\\FU\\PRN212\\Code\\Project\\Fly\\Services\\Services.csproj": {
+              "projectPath": "D:\\FU\\PRN212\\Code\\Project\\Fly\\Services\\Services.csproj"
+>>>>>>> 2aeee82f8a197b700218f4edb97a6217ecfcba82
             }
           }
         }
@@ -3442,7 +3460,11 @@
             "privateAssets": "none"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 2aeee82f8a197b700218f4edb97a6217ecfcba82
       }
     }
   },
