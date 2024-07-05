@@ -11,9 +11,6 @@
     <Grid>
         <DataGrid Name="dgData" Margin="229,203,29,95" SelectionChanged="dgData_SelectionChanged"/>
         <TextBox Name="txtId" HorizontalAlignment="Left" Margin="229,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="642"/>
-        <TextBox Name="txtPassengerId" HorizontalAlignment="Left" Margin="229,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="642"/>
-        <TextBox Name="txtFlightId" HorizontalAlignment="Left" Margin="229,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="642"/>
-        <TextBox Name="txtBookingPlatformId" HorizontalAlignment="Left" Margin="229,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="642"/>
         <Label Content="Booking ID" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="78" Height="26"/>
         <Label Content="Passenger ID" HorizontalAlignment="Left" Margin="10,87,0,0" VerticalAlignment="Top"/>
         <Label Content="Flight ID" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top"/>
@@ -34,7 +31,10 @@
         <TextBox Name="filterPID" HorizontalAlignment="Left" Margin="16,248,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="filter_PassengerID"/>
         <TextBox Name="filterFID" HorizontalAlignment="Left" Margin="16,292,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="filter_FlightID"/>
         <TextBox Name="filterBPID" HorizontalAlignment="Left" Margin="16,336,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="filter_BookingPlatformID"/>
-        <TextBox Name="filterBT"  HorizontalAlignment="Left" Margin="16,380,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="filter_BookingTime"/>
+        <ComboBox Name="cboPassenger" HorizontalAlignment="Left" Margin="229,89,0,0" VerticalAlignment="Top" Width="642"/>
+        <ComboBox Name="cboFlight" HorizontalAlignment="Left" Margin="229,112,0,0" VerticalAlignment="Top" Width="642"/>
+        <ComboBox Name="cboBookingPlatform" HorizontalAlignment="Left" Margin="229,135,0,0" VerticalAlignment="Top" Width="642"/>
+        <TextBox Name="datePicker" HorizontalAlignment="Left" Margin="16,380,0,0" VerticalAlignment="Top" Width="120" TextChanged="datePicker_TextChanged"/>
 
     </Grid>
 </Window>

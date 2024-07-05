@@ -60,7 +60,7 @@ namespace Repositories
         }
         public List<Booking> filterByBookingTime(string time)
         {
-            return dbContext.Bookings.Where(b => b.BookingTime.ToString().Equals(time)).ToList();
+            return dbContext.Bookings.Where(b => b.BookingTime.ToString().Contains(time)).ToList();
         }
     }
 }

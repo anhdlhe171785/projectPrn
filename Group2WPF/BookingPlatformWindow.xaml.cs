@@ -19,7 +19,7 @@ namespace Group2WPF
         public BookingPlatformWindow()
         {
             InitializeComponent();
-            _bookingPlatformService = new BookingPlatformService(new BookingPlatformRepository());
+            _bookingPlatformService = new BookingPlatformService();
             LoadData();
         }
 
