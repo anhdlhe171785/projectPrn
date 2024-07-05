@@ -20,7 +20,7 @@ namespace Group2WPF
 		private FlightManagementDbContext _context;
 		public MainWindow()
 		{
-			InitializeComponent();
+            InitializeComponent();
 			_context = new FlightManagementDbContext();
 		}
 

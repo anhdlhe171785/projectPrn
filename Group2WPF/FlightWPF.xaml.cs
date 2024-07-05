@@ -161,6 +161,23 @@ namespace Group2WPF
         {
             this.Close();
         }
+        private void btnReset_Click(object sender, RoutedEventArgs e)
+        {
+            ResetInput();
+        }
+
+        private void ResetInput()
+        {
+            //txtID.IsReadOnly = false;
+            txtFlightID.Text = string.Empty;
+            txtAirlineID.Text = string.Empty;
+            txtDepartingAirport.Text = string.Empty;
+            txtArrivingAirport.Text = string.Empty;
+            txtDepartingGate.Text = string.Empty;
+            txtArrivingGate.Text = string.Empty;
+            dpDepartureTime.Text = string.Empty;
+            dpArrivalTime.Text = string.Empty;
+        }
 
         private void txtSearchByFlightID_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -261,5 +278,7 @@ namespace Group2WPF
                 MessageBox.Show(ex.Message, "Error: can not load products");
             }
         }
+
+        
     }
 }
