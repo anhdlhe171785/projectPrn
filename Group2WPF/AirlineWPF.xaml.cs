@@ -37,6 +37,7 @@ namespace Group2WPF
         {
             try
             {
+                AirlineDataGrid.ItemsSource = null;
                 AirlineDataGrid.ItemsSource = _airlineService.GetAirlines();
             }
             catch (Exception ex)
