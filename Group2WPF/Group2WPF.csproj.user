@@ -16,7 +16,7 @@
     <Compile Update="PassengerWPF.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="FlightWPF.xaml.cs">
+    <Compile Update="BookingPlatformWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -28,6 +28,7 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="FlightWPF.xaml">
+
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

@@ -1,6 +1,9 @@
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.csproj.AssemblyReference.cache
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\AirlineWPF.g.cs
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\AirportWPF.g.cs
+D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\BaggageWindow.g.cs
+D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingPlatformWindow.g.cs
+D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingWPF.g.cs
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\FlightWPF.g.cs
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\MainWindow.g.cs
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\PassengerWPF.g.cs
@@ -15,6 +18,8 @@ D:\FU\PRN212\Code\Project\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.dll
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.pdb
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\bin\Debug\net8.0-windows\Azure.Core.dll
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\bin\Debug\net8.0-windows\Azure.Identity.dll
+D:\FU\PRN212\Code\Project\Fly\Group2WPF\bin\Debug\net8.0-windows\LiveCharts.dll
+D:\FU\PRN212\Code\Project\Fly\Group2WPF\bin\Debug\net8.0-windows\LiveCharts.Wpf.dll
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
@@ -73,6 +78,9 @@ D:\FU\PRN212\Code\Project\Fly\Group2WPF\bin\Debug\net8.0-windows\DataAccess.pdb
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\bin\Debug\net8.0-windows\Repositories.pdb
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\AirlineWPF.baml
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\AirportWPF.baml
+D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\BaggageWindow.baml
+D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingPlatformWindow.baml
+D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingWPF.baml
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\FlightWPF.baml
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\MainWindow.baml
 D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\PassengerWPF.baml

@@ -25,7 +25,6 @@ namespace Group2WPF
             InitializeComponent();
             _airportService = new AirportService();
         }
-
         private void Airport_Loaded(object sender, RoutedEventArgs e)
         {
             LoadAirport();

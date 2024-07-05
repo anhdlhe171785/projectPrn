@@ -22,7 +22,6 @@ namespace Group2WPF
     public partial class AirlineWPF : Window
     {
         private readonly IAirlineService _airlineService;
-
         public AirlineWPF()
         {
             InitializeComponent();
@@ -182,7 +181,6 @@ namespace Group2WPF
         {
             this.Close();
         }
-
         private void ResetInput()
         {
             txtairlineid.Text = string.Empty;
