@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zV+efCLOpe68zt8FBt20AC48ee9MhncHGKGgIRzQSosrFPI6IEYO+FniNMMQZFvKeKqJjPUj9TsUVK7O+Z8chw==",
+  "dgSpecHash": "4Sqpptyz4Kg=",
   "success": true,
-  "projectFilePath": "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Group2WPF\\Group2WPF.csproj",
+  "projectFilePath": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Group2WPF\\Group2WPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

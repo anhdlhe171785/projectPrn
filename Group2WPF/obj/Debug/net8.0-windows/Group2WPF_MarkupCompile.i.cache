@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Group2WPF\obj\Debug\net8.0-windows\
 Group2WPF
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\Workspase\CSharp_Visual_Studio\WPF\Group2_SE1814_FlightManagementSystem\Group2WPF\App.xaml
-3-1199537101
+D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Group2WPF\App.xaml
+4-368103841
 
-8642165225
-2471145148186
-FlightWPF.xaml;MainWindow.xaml;PassengerWPF.xaml;
+91922455083
+247685001899
+BookingWPF.xaml;FlightWPF.xaml;MainWindow.xaml;PassengerWPF.xaml;
 
 True
 

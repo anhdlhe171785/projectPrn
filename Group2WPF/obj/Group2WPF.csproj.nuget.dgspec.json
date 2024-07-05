@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Group2WPF\\Group2WPF.csproj": {}
+    "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Group2WPF\\Group2WPF.csproj": {}
   },
   "projects": {
-    "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\DataAccess\\DataAccess.csproj": {
+    "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\DataAccess\\DataAccess.csproj",
+        "projectPath": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\DataAccess\\obj\\",
+        "outputPath": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,6 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -89,21 +94,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Group2WPF\\Group2WPF.csproj": {
+    "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Group2WPF\\Group2WPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Group2WPF\\Group2WPF.csproj",
+        "projectUniqueName": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Group2WPF\\Group2WPF.csproj",
         "projectName": "Group2WPF",
-        "projectPath": "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Group2WPF\\Group2WPF.csproj",
+        "projectPath": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Group2WPF\\Group2WPF.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Group2WPF\\obj\\",
+        "outputPath": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Group2WPF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -121,8 +126,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Services\\Services.csproj": {
-                "projectPath": "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Services\\Services.csproj"
+              "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Services\\Services.csproj": {
+                "projectPath": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Services\\Services.csproj"
               }
             }
           }
@@ -131,6 +136,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -155,21 +165,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Repositories\\Repositories.csproj": {
+    "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Repositories\\Repositories.csproj",
+        "projectPath": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Repositories\\Repositories.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Repositories\\obj\\",
+        "outputPath": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -187,8 +197,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\DataAccess\\DataAccess.csproj"
+              "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -197,6 +207,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -218,21 +233,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Services\\Services.csproj": {
+    "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Services\\Services.csproj",
+        "projectUniqueName": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Services\\Services.csproj",
+        "projectPath": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Services\\obj\\",
+        "outputPath": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -250,8 +265,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Repositories\\Repositories.csproj": {
-                "projectPath": "D:\\Workspase\\CSharp_Visual_Studio\\WPF\\Group2_SE1814_FlightManagementSystem\\Repositories\\Repositories.csproj"
+              "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Repositories\\Repositories.csproj": {
+                "projectPath": "D:\\FPT codes\\PRN212\\Codes\\Group2_SE1814_FlightManagementSystem\\Repositories\\Repositories.csproj"
               }
             }
           }
@@ -260,6 +275,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -281,7 +301,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
