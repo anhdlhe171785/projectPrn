@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\FPT codes\PRN212\Codes\Group2_SE1814_FlightManagementSystem\Group2WPF\App.xaml
-4-368103841
+61007523647
 
-7-764488811
+9990662039
 247685001899
-BookingWPF.xaml;FlightWPF.xaml;MainWindow.xaml;PassengerWPF.xaml;
+BaggageWindow.xaml;BookingPlatformWindow.xaml;BookingWPF.xaml;FlightWPF.xaml;MainWindow.xaml;PassengerWPF.xaml;
 
 False
 

@@ -58,9 +58,6 @@ namespace Group2WPF
                     txtFlightId.Text = booking.FlightId.ToString();
                     txtBookingTime.Text = booking.BookingTime.ToString();
                 }
-            } else
-            {
-                MessageBox.Show("Null");
             }
         }
 
