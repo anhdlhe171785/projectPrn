@@ -25,7 +25,7 @@ namespace Group2WPF
 		public Func<double, string> YFormatter { get; set; }
 		public MainWindow()
 		{
-			InitializeComponent();
+            InitializeComponent();
 			_context = new FlightManagementDbContext();
 			SeriesCollection = new SeriesCollection
 			{
@@ -102,6 +102,19 @@ namespace Group2WPF
 		{
 			FlightWPF flightWPF = new FlightWPF();
 			flightWPF.ShowDialog();
+		}
+
+		private void Baggage_Click(object sender, RoutedEventArgs e)
+		{
+			BaggageWindow baggageWindow = new BaggageWindow();
+			baggageWindow.ShowDialog();
+
+		}
+
+		private void BookingPlatform_Click(object sender, RoutedEventArgs e)
+		{
+			BookingPlatformWindow bookingPlatformWindow = new BookingPlatformWindow();
+			bookingPlatformWindow.ShowDialog();
 		}
 	}
 }

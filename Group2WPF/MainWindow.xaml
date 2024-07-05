@@ -20,6 +20,8 @@
         </lvc:CartesianChart>
         <Label Content="The graph shows the number of bookings flight today and yesterday" HorizontalAlignment="Left" Margin="234,610,0,0" VerticalAlignment="Top" Height="50" Width="792" FontWeight="Bold" FontSize="22"/>
         <Label Name="lblpercen" Content="Increased 10% compared to yesterday" HorizontalAlignment="Left" Margin="917,70,0,0" VerticalAlignment="Top" Width="243" Background="#FF2DD228"/>
-        <Button  x:Name="Flight" Content="Flight" HorizontalAlignment="Left" Margin="273,37,0,0" VerticalAlignment="Top" Height="34" Width="103" Click="Flight_Click" RenderTransformOrigin="-0.744,-1.177"/>
+        <Button  x:Name="Flight" Content="Flight" HorizontalAlignment="Left" Margin="261,37,0,0" VerticalAlignment="Top" Height="34" Width="103" Click="Flight_Click" RenderTransformOrigin="-0.744,-1.177"/>
+        <Button  x:Name="Baggage" Content="Baggage" HorizontalAlignment="Left" Margin="392,37,0,0" VerticalAlignment="Top" Height="34" Width="103" Click="Baggage_Click" RenderTransformOrigin="-0.744,-1.177"/>
+        <Button  x:Name="BookingPlatform" Content="BookingPlatform" HorizontalAlignment="Left" Margin="527,37,0,0" VerticalAlignment="Top" Height="34" Width="103" Click="BookingPlatform_Click" RenderTransformOrigin="-0.744,-1.177"/>
     </Grid>
 </Window>

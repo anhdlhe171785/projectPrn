@@ -7,15 +7,24 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="PassengerWPF.xaml.cs">
+    <Compile Update="BaggageWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="FlightWPF.xaml.cs">
+    <Compile Update="BookingPlatformWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+
+    <Page Update="BaggageWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BookingPlatformWindow.xaml">
+		<SubType>Designer</SubType>
+	</Page>
+
     <Page Update="FlightWPF.xaml">
+
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
