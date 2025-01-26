@@ -48,13 +48,30 @@
         <!-- Add Title Label -->
         <Label Content="Baggage Management" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" FontSize="24" FontWeight="Bold"/>
 
-        <DataGrid x:Name="BaggageDataGrid" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="483" Margin="306,147,0,0" VerticalAlignment="Top" Width="646" SelectionChanged="BaggageDataGrid_SelectionChanged">
+        <DataGrid x:Name="BaggageDataGrid" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="auto" Margin="306,147,0,0" VerticalAlignment="Top" Width="646" SelectionChanged="BaggageDataGrid_SelectionChanged"
+                   CanUserAddRows="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Id}" Header="ID" IsReadOnly="True" FontSize="14" FontWeight="Bold" Width="Auto"/>
                 <DataGridTextColumn Binding="{Binding BookingId}" Header="Booking ID" FontSize="14" Width="*"/>
                 <DataGridTextColumn Binding="{Binding WeightInKg}" Header="Weight (kg)" FontSize="14" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="45,0,0,122">
+            <Button Content="First" Click="FirstPageButton_Click" Margin="5"/>
+            <Button Content="Previous" Click="PreviousPageButton_Click" Margin="5"/>
+            <TextBlock Text="{Binding CurrentPageText}" VerticalAlignment="Center" Margin="10,0"/>
+            <Button Content="Next" Click="NextPageButton_Click" Margin="5" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.521"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <Button Content="Last" Click="LastPageButton_Click" Margin="5"/>
+        </StackPanel>
 
         <Label Content="ID :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,139,0,0" RenderTransformOrigin="0.5,0.5" Width="50"/>
         <TextBox x:Name="IdTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Margin="104,147,0,0" Height="21"/>

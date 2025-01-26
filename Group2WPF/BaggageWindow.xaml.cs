@@ -13,6 +13,10 @@ namespace Group2WPF
         private FlightManagementDbContext _context;
         private Baggage _selectedBaggage;
 
+        private int pageSize = 10; // Số lượng item trên mỗi trang
+        private int pageIndex = 0; // Trang hiện tại
+        private List<Baggage> baggages; // Danh sách tất cả các baggage
+
         public BaggageWindow()
         {
             InitializeComponent();
@@ -21,11 +25,61 @@ namespace Group2WPF
             LoadBookingIds();
         }
 
+        //private void LoadData()
+        //{
+        //    BaggageDataGrid.ItemsSource = _context.Baggages.ToList();
+        //}
+
         private void LoadData()
         {
-            BaggageDataGrid.ItemsSource = _context.Baggages.ToList();
+            // Lấy danh sách tất cả các baggage
+            baggages = _context.Baggages.ToList();
+
+            // Hiển thị dữ liệu cho trang hiện tại
+            DisplayCurrentPage();
         }
 
+        private void DisplayCurrentPage()
+        {
+            // Tính toán index bắt đầu và số lượng phần tử của trang hiện tại
+            var startIndex = pageIndex * pageSize;
+            var displayedItems = baggages.Skip(startIndex).Take(pageSize).ToList();
+
+            // Đặt ItemsSource cho DataGrid
+            BaggageDataGrid.ItemsSource = displayedItems;
+        }
+
+        private void FirstPageButton_Click(object sender, RoutedEventArgs e)
+        {
+            pageIndex = 0;
+            DisplayCurrentPage();
+        }
+
+        private void PreviousPageButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (pageIndex > 0)
+            {
+                pageIndex--;
+                DisplayCurrentPage();
+            }
+        }
+
+        private void NextPageButton_Click(object sender, RoutedEventArgs e)
+        {
+            var maxPageIndex = Math.Ceiling((double)baggages.Count / pageSize) - 1;
+            if (pageIndex < maxPageIndex)
+            {
+                pageIndex++;
+                DisplayCurrentPage();
+            }
+        }
+
+        private void LastPageButton_Click(object sender, RoutedEventArgs e)
+        {
+            var maxPageIndex = Math.Ceiling((double)baggages.Count / pageSize) - 1;
+            pageIndex = (int)maxPageIndex;
+            DisplayCurrentPage();
+        }
         private void LoadBookingIds()
         {
             BookingIdComboBox.ItemsSource = _context.Bookings.ToList();
@@ -120,7 +174,9 @@ namespace Group2WPF
         }
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
+            //Window1 window1 = new Window1();
             this.Close();
+            //window1.ShowDialog();
         }
 
         private void WeightInKgTextBox_TextChanged(object sender, TextChangedEventArgs e)

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\FU\PRN212\Code\Project\Fly\Group2WPF\obj\Debug\net8.0-windows\
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\
 Group2WPF
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\FU\PRN212\Code\Project\Fly\Group2WPF\App.xaml
-81840278899
+D:\FU\PRN212\Fly\Group2WPF\App.xaml
+10-409794772
 
-11-261665915
-249920762
-AirlineWPF.xaml;AirportWPF.xaml;BaggageWindow.xaml;BookingPlatformWindow.xaml;BookingWPF.xaml;FlightWPF.xaml;MainWindow.xaml;PassengerWPF.xaml;
+131966098155
+249-1296352771
+AirlineWPF.xaml;AirportWPF.xaml;BaggageWindow.xaml;BookingPlatformWindow.xaml;BookingWPF.xaml;FlightWPF.xaml;Login.xaml;MainWindow.xaml;PassengerWPF.xaml;Window1.xaml;
 
 False
 

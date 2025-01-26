@@ -8,21 +8,48 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="PassengerWPF" Height="700" Width="1200">
-    <Grid>
-        <Button  Name="btnPassenger" Content="Passenger" HorizontalAlignment="Left" Margin="129,37,0,0" VerticalAlignment="Top" Height="34" Width="103" Click="btnPassenger_Click" RenderTransformOrigin="-0.744,-1.177"/>
-        <lvc:CartesianChart Series="{Binding SeriesCollection}" LegendLocation="Right" Margin="218,101,202,101" >
+    <Window.Resources>
+        <!-- Button Style -->
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Width" Value="120"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Background" Value="#007ACC"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Background="#F0F0F0" Margin="20">
+        <!-- Navigation Buttons -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,00,0,0">
+            <Button x:Name="btnAirline" Content="Airline" Click="btnAirline_Click"
+                    Height="50"/>
+            <Button x:Name="btnAirport" Content="Airport" Click="btnAirport_Click"
+                    Height="50"/>
+            <Button x:Name="btnLogout" Content="Logout" Click="btnLogout_Click" 
+                    Margin="600,10,0,0" 
+                    Height="50"/>
+        </StackPanel>
+
+        <!-- Status Label -->
+        <Label x:Name="lblpercen" Content="Increased 10% compared to yesterday" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Background="#FF2DD228" Padding="10" BorderBrush="Gray" BorderThickness="1"/>
+
+        <!-- Chart Area -->
+        <lvc:CartesianChart Series="{Binding SeriesCollection}" LegendLocation="Right" Margin="20,130,20,100">
             <lvc:CartesianChart.AxisY>
-                <lvc:Axis Title="Quantity" LabelFormatter="{Binding YFormatter}"></lvc:Axis>
+                <lvc:Axis Title="Quantity" LabelFormatter="{Binding YFormatter}"/>
             </lvc:CartesianChart.AxisY>
             <lvc:CartesianChart.AxisX>
-                <lvc:Axis Title="Time/Day" Labels="{Binding Labels}"></lvc:Axis>
+                <lvc:Axis Title="Time/Day" Labels="{Binding Labels}"/>
             </lvc:CartesianChart.AxisX>
         </lvc:CartesianChart>
-        <Label Content="The graph shows the number of bookings flight today and yesterday" HorizontalAlignment="Left" Margin="234,610,0,0" VerticalAlignment="Top" Height="50" Width="792" FontWeight="Bold" FontSize="22"/>
-        <Label Name="lblpercen" Content="Increased 10% compared to yesterday" HorizontalAlignment="Left" Margin="917,70,0,0" VerticalAlignment="Top" Width="243" Background="#FF2DD228"/>
-        <Button  x:Name="Flight" Content="Flight" HorizontalAlignment="Left" Margin="261,37,0,0" VerticalAlignment="Top" Height="34" Width="103" Click="Flight_Click" RenderTransformOrigin="-0.744,-1.177"/>
-        <Button  x:Name="Baggage" Content="Baggage" HorizontalAlignment="Left" Margin="392,37,0,0" VerticalAlignment="Top" Height="34" Width="103" Click="Baggage_Click" RenderTransformOrigin="-0.744,-1.177"/>
-        <Button  x:Name="BookingPlatform" Content="BookingPlatform" HorizontalAlignment="Left" Margin="527,37,0,0" VerticalAlignment="Top" Height="34" Width="103" Click="BookingPlatform_Click" RenderTransformOrigin="-0.744,-1.177"/>
-        <Button  x:Name="Booking" Content="Booking" HorizontalAlignment="Left" Margin="665,37,0,0" VerticalAlignment="Top" Width="117" Height="34" Click="Booking_Click"/>
+
+        <!-- Description Label -->
+        <Label Content="The graph shows the number of flight bookings today and yesterday" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="50" Width="792" FontWeight="Bold" FontSize="22" Margin="20,0,0,20"/>
     </Grid>
 </Window>

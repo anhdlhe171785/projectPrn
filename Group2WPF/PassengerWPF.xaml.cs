@@ -262,8 +262,8 @@ namespace Group2WPF
 
 		private void Close_Click(object sender, RoutedEventArgs e)
 		{
-			this.Close();
-		}
+            this.Close();
+        }
 
 		private void txtFilterFNameOrLastName_TextChanged(object sender, TextChangedEventArgs e)
 		{

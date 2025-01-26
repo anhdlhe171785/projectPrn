@@ -75,8 +75,8 @@ namespace Group2WPF
 		{
 			var today = date;
 
-			var startTime = today.AddHours(startHour);
-			var endTime = today.AddHours(endHour);
+			var startTime = today.Date.AddHours(startHour);
+			var endTime = today.Date.AddHours(endHour);
 			if (endHour == 24)
 			{
 				endTime = endTime.AddMilliseconds(-1); // 23:59:59.999 của ngày đó
@@ -92,35 +92,29 @@ namespace Group2WPF
 
 			return ((double)(todayCount - yesterdayCount) / yesterdayCount) * 100;
 		}
-		private void btnPassenger_Click(object sender, RoutedEventArgs e)
-		{
-			PassengerWPF passengerWPF = new PassengerWPF();
-			passengerWPF.ShowDialog();
-		}
 
-		private void Flight_Click(object sender, RoutedEventArgs e)
-		{
-			FlightWPF flightWPF = new FlightWPF();
-			flightWPF.ShowDialog();
-		}
-
-		private void Baggage_Click(object sender, RoutedEventArgs e)
-		{
-			BaggageWindow baggageWindow = new BaggageWindow();
-			baggageWindow.ShowDialog();
-
-		}
-
-		private void BookingPlatform_Click(object sender, RoutedEventArgs e)
-		{
-			BookingPlatformWindow bookingPlatformWindow = new BookingPlatformWindow();
-			bookingPlatformWindow.ShowDialog();
-		}
-
-        private void Booking_Click(object sender, RoutedEventArgs e)
+        private void btnAirline_Click(object sender, RoutedEventArgs e)
         {
-			BookingWPF bookingWindow = new BookingWPF();
-			bookingWindow.ShowDialog();
+			AirlineWPF airline = new AirlineWPF();
+			airline.ShowDialog();
+        }
+
+        private void btnAirport_Click(object sender, RoutedEventArgs e)
+        {
+			AirportWPF airport = new AirportWPF();
+			airport.ShowDialog();
+        }
+
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            var confirm = MessageBox.Show(
+            "Are You sure?", "LogOut", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            if (confirm == MessageBoxResult.Yes)
+            {
+                Login login = new Login();
+                this.Close();
+                login.ShowDialog();
+            }
         }
     }
 }
